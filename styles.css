@@ -1,0 +1,128 @@
+body {
+background-color: #050505;
+color: white;
+font-family: 'Arial Black', sans-serif;
+margin: 0;
+}
+
+.container {
+padding: 20px;
+max-width: 1200px;
+margin: auto;
+}
+
+.section-title {
+text-align: center;
+letter-spacing: 2px;
+margin: 50px 0;
+}
+
+/* --- HERO --- */
+.hero {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+}
+
+.logo-circle {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+border: 4px solid #fff;
+overflow: hidden;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.logo-circle img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* --- GRILLE PRODUITS + ANIMATION --- */
+.product-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+}
+
+.product-card {
+background: #111;
+padding: 15px;
+text-align: center;
+border: 1px solid #222;
+transition: 0.4s ease; /* Pour l'animation */
+}
+
+.product-card img {
+width: 100%;
+height: auto;
+transition: 0.4s ease; /* Pour l'animation */
+}
+
+/* L'ANIMATION DE ZOOM */
+.product-card:hover {
+transform: translateY(-10px); /* La carte monte */
+border-color: #fff;
+box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+}
+
+.product-card:hover img {
+transform: scale(1.05); /* L'image zoom */
+}
+
+/* Couleurs noms */
+.name-black { color: #fff; }
+.name-yellow { color: #ffff00; }
+.name-red { color: #ff0000; }
+
+/* --- FORMULAIRE --- */
+.order-form {
+background: #111;
+padding: 30px;
+margin-top: 50px;
+border: 1px solid #333;
+}
+
+.order-form input, .order-form textarea {
+width: 100%;
+padding: 15px;
+margin: 10px 0;
+background: #000;
+border: 1px solid #444;
+color: white;
+box-sizing: border-box;
+}
+
+.submit-btn {
+width: 100%;
+padding: 20px;
+background: white;
+color: black;
+font-weight: bold;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.submit-btn:hover { background: #888; }
+
+/* --- WHATSAPP --- */
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25d366;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
